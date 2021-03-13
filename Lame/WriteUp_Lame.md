@@ -1,6 +1,6 @@
 # Lame - HackTheBox
 
-![lame](http://url/to/img.png)
+![lame](https://miro.medium.com/max/593/1*7Wkk8qE92Mwf1nWWbYS5mA.png)
 
 ### Enumeration
 
