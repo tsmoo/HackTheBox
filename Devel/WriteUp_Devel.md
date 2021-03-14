@@ -40,20 +40,20 @@ ftp> ls
 03-17-17  04:37PM               184946 welcome.png
 ```
 
-We retrieve the present files with the 'get' command :
+We retrieve the present files with the `get` command :
 
 ```
 ftp> get iistart.htm
 ftp> get welcome.png
 ```
 
-There are 2 directories under 'aspnet_client' and one called 'system_web'. There are empty.
+There are 2 directories under `aspnet_client` and one called `system_web`. There are empty.
 
 It seems that this FTP Server contains the content of the Web Server.
 
 #### Web Server / Port 80
 
-By visiting the website, we have at the root, the image 'welcome.png' that we has on the FTP server.
+By visiting the website, we have at the root, the image `welcome.png` that we has on the FTP server.
 
 We were right, the FTP server hosts the website content.
 
@@ -67,7 +67,7 @@ Let's upload a ASPX reverse shell :
 git clone https://github.com/borjmz/aspx-reverse-shell
 ```
 
-Edit the 'shell.aspx' file with your local IP and port.
+Edit the `shell.aspx` file with your local IP and port.
 
 We can also use 'msfvenom' to generate a payload :
 

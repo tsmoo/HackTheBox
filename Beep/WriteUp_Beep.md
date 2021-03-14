@@ -49,7 +49,7 @@ nmap -T4 -sC -sV -p- 10.10.10.7
 
 By visiting the web site, we are redirected on port 443.
 
-On this port, we have a login page for a 'elastix' software. elsatix seems to be an TOIP software.
+On this port, we have a login page for a `elastix` software. elsatix seems to be an TOIP software.
 
 Let's check if some exploits exist. We found one :
 
@@ -71,7 +71,7 @@ After several reverse shells upload attempts on port 443, we try to connect in S
 
 #### SSH - Port 22
 
-We have just one user : admin, so let's try to connect with 'root' user :
+We have just one user : admin, so let's try to connect with `root` user :
 
 ```
 ssh root@10.10.10.7
@@ -87,4 +87,4 @@ Password : jEhdIekWmdjE
 uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel)
 ```
 
-We can get the flags in '/home/fanis/user.txt' and '/root/root.txt' !
+We can get the flags in `/home/fanis/user.txt` and `/root/root.txt` !

