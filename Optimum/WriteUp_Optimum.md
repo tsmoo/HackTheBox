@@ -1,6 +1,6 @@
 # Optimum - HackTheBox
 
-![optimum](https://www.google.com/url?sa=i&url=https%3A%2F%2Franakhalil101.medium.com%2Fhack-the-box-optimum-writeup-w-o-metasploit-3a912e1c488c&psig=AOvVaw1gE6xy3KapFG30A0hD4gxM&ust=1615834055429000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODXwIm5sO8CFQAAAAAdAAAAABAD)
+![optimum](https://miro.medium.com/max/577/1*NKZJ6g5IrMlmin0odn-nQw.png)
 
 ### Enumeration
 
