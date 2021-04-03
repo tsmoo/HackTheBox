@@ -1,6 +1,6 @@
 # Popcorn - HackTheBox
 
-IP : 10.10.10.6
+![popcorn](banner/popcorn.jpg)
 
 ## Enumeration
 
